@@ -1,0 +1,38 @@
+name: "style: 스타일/표현 변경"
+description: "동작 변화 없이 보이는 것/정리만 변경"
+title: "style: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        해커톤용 간단 템플릿입니다.
+        `style` = 사용 방법은 그대로, UI/코드의 표현만 변경.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "대상"
+      options:
+        - "iOS"
+        - "Web"
+        - "iOS + Web"
+        - "기타"
+    validations:
+      required: true
+
+  - type: textarea
+    id: one_liner
+    attributes:
+      label: "한 줄 설명"
+      placeholder: "예) 예약 버튼 색/간격을 정리해 가독성을 높인다"
+    validations:
+      required: true
+
+  - type: textarea
+    id: before_after
+    attributes:
+      label: "전/후 스크린샷 또는 링크(선택)"
+      placeholder: "가능하면 스크린샷/피그마 링크"
+    validations:
+      required: false
+

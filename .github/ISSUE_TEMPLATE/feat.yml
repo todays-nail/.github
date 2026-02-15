@@ -1,0 +1,38 @@
+name: "feat: 기능 개발"
+description: "새 기능/동작 변화(사용자가 체감)"
+title: "feat: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        해커톤용 간단 템플릿입니다.
+        `feat` = 사용자가 체감하는 새 기능/동작 변화.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "대상"
+      options:
+        - "iOS"
+        - "Web"
+        - "iOS + Web"
+        - "기타"
+    validations:
+      required: true
+
+  - type: textarea
+    id: one_liner
+    attributes:
+      label: "한 줄 설명"
+      placeholder: "예) 사진 업로드를 2단계로 줄여 이탈을 줄인다"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "설명/링크/스크린샷(선택)"
+      placeholder: "배경, 참고 링크(Notion/Figma), 스크린샷 등을 자유롭게"
+    validations:
+      required: false
+

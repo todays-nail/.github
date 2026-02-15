@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Q&A / 논의(Discussions)"
+    url: "https://github.com/orgs/todays-nail/discussions"
+    about: "질문/아이디어 논의는 Discussions를 이용해주세요."
+  - name: "보안 취약점 제보(Security)"
+    url: "https://github.com/todays-nail/.github/security/policy"
+    about: "보안 이슈는 공개 이슈 대신 Security 정책을 통해 비공개로 제보해주세요."
+

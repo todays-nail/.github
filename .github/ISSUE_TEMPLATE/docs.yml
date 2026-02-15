@@ -1,0 +1,26 @@
+name: "docs: 문서"
+description: "README/가이드/정리 문서"
+title: "docs: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        해커톤용 간단 템플릿입니다.
+        `docs` = 팀이 참고할 문서/가이드/정리.
+
+  - type: textarea
+    id: one_liner
+    attributes:
+      label: "한 줄 설명"
+      placeholder: "예) 비개발자도 이슈를 쓸 수 있게 템플릿 사용법을 문서로 정리"
+    validations:
+      required: true
+
+  - type: textarea
+    id: target
+    attributes:
+      label: "어디에 작성/수정?(선택)"
+      placeholder: "예) README, Notion 링크, 위키 페이지"
+    validations:
+      required: false
+

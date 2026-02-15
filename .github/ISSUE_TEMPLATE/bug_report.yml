@@ -1,0 +1,44 @@
+name: "bug: 버그 리포트"
+description: "오동작/에러 제보"
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        해커톤용 간단 템플릿입니다.
+        스크린샷/영상이 있으면 제일 빨리 해결됩니다.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "대상"
+      options:
+        - "iOS"
+        - "Web"
+        - "iOS + Web"
+        - "기타"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "한 줄 설명"
+      placeholder: "예) 결제 완료 후 확인 화면에서 앱이 멈춘다"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "상세(선택)"
+      placeholder: |
+        (선택) 아래 중 아는 것만 적어도 됩니다.
+        - 언제/얼마나 자주: 예) 오늘 오전부터 3번 중 2번
+        - 재현 방법: 1) ... 2) ... 3) ...
+        - 기대 vs 실제
+        - 스크린샷/영상/로그
+    validations:
+      required: false
+

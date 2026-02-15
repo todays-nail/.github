@@ -1,0 +1,37 @@
+name: "chore: 유지보수/설정"
+description: "의존성/설정/CI/레포 정비"
+title: "chore: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        해커톤용 간단 템플릿입니다.
+        `chore` = 기능이 아니라, 개발/운영을 위한 설정/정비.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "대상"
+      options:
+        - "Repo/CI"
+        - "iOS"
+        - "Web"
+        - "기타"
+    validations:
+      required: true
+
+  - type: textarea
+    id: one_liner
+    attributes:
+      label: "한 줄 설명"
+      placeholder: "예) iOS 빌드가 느려서 캐시 설정을 추가한다"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "메모/링크(선택)"
+    validations:
+      required: false
+
